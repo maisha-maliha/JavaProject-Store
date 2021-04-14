@@ -1,2 +1,23 @@
- 
+
 /* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+.yello{
+	-fx-text-fill:yellow;
+}
+.green{
+	-fx-background-color:#17D528;
+}
+.pink{
+	-fx-background-color: #FF395F;
+	-fx-text-fill: white;
+}
+.reversepink{
+	-fx-border-width: 2px;
+	-fx-border-color: #FF395F;
+	-fx-background-color: white;
+	-fx-text-fill: #FF395F;
+}
+.blue{
+	-fx-background-color: #399CFF;
+	-fx-text-fill: white;
+}

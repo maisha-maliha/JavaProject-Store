@@ -15,35 +15,22 @@ public class HomeController {
 
 	// ============= SCENE CHANGING METHODS ===========
 	
-	public void ChangingToUser(ActionEvent event) {
-		try {
-			AnchorPane userPane = (AnchorPane)FXMLLoader.load(getClass().getResource("User.fxml"));
-			stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
-			Scene user = new Scene(userPane);
-			user.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
-			stage.setScene(user);
-			stage.show();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-	}
-	public void ChangingToAdmin(ActionEvent event) {
-		try {
-			AnchorPane userPane = (AnchorPane)FXMLLoader.load(getClass().getResource("Admin.fxml"));
-			stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
-			Scene user = new Scene(userPane);
-			user.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
-			stage.setScene(user);
-			stage.show();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-	}
 	public void ChangingToHome(ActionEvent event) {
 		try {
 			AnchorPane userPane = (AnchorPane)FXMLLoader.load(getClass().getResource("Home.fxml"));
+			stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
+			Scene user = new Scene(userPane);
+			user.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+			stage.setScene(user);
+			stage.show();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	public void ChangingToCart(ActionEvent event) {
+		try {
+			AnchorPane userPane = (AnchorPane)FXMLLoader.load(getClass().getResource("Cart.fxml"));
 			stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
 			Scene user = new Scene(userPane);
 			user.getStylesheets().add(getClass().getResource("application.css").toExternalForm());

@@ -7,19 +7,19 @@
 
 <AnchorPane prefHeight="500.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.HomeController">
    <children>
-      <Button layoutX="244.0" layoutY="162.0" mnemonicParsing="false" onAction="#ChangingToAdmin" prefHeight="99.0" prefWidth="424.0" text="ADMIN">
+      <Button layoutX="244.0" layoutY="162.0" mnemonicParsing="false" onAction="#ChangingToAdminFood" prefHeight="99.0" prefWidth="424.0" styleClass="blue" stylesheets="@application.css" text="ADMIN">
          <font>
             <Font name="System Bold" size="24.0" />
          </font>
       </Button>
-      <Button layoutX="244.0" layoutY="304.0" mnemonicParsing="false" onAction="#ChangingToUser" prefHeight="99.0" prefWidth="424.0" text="CUSTOMER">
+      <Button layoutX="244.0" layoutY="304.0" mnemonicParsing="false" onAction="#ChangingToFood" prefHeight="99.0" prefWidth="424.0" styleClass="pink" stylesheets="@application.css" text="CUSTOMER">
          <font>
             <Font name="System Bold" size="24.0" />
          </font>
       </Button>
       <Label alignment="CENTER" layoutX="244.0" layoutY="42.0" prefHeight="75.0" prefWidth="424.0" text="Who are you?" textAlignment="CENTER">
          <font>
-            <Font name="System Bold Italic" size="24.0" />
+            <Font name="Berlin Sans FB Demi Bold" size="24.0" />
          </font>
       </Label>
    </children>
