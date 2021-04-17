@@ -51,12 +51,12 @@
       <TextField fx:id="price" layoutX="310.0" layoutY="408.0" prefHeight="26.0" prefWidth="150.0" />
       <Label layoutX="226.0" layoutY="375.0" prefHeight="18.0" prefWidth="86.0" text="Product name" />
       <Label layoutX="246.0" layoutY="411.0" prefHeight="18.0" prefWidth="46.0" text="Price" />
-      <Button layoutX="601.0" layoutY="451.0" mnemonicParsing="false" onAction="#Addact" prefHeight="28.0" prefWidth="114.0" styleClass="pink" stylesheets="@application.css" text="ADD" />
+      <Button layoutX="601.0" layoutY="451.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="114.0" styleClass="pink" stylesheets="@application.css" text="ADD" />
       <Label layoutX="233.0" layoutY="455.0" prefHeight="18.0" prefWidth="52.0" text="Quantity" />
       <TextField fx:id="quantity" layoutX="310.0" layoutY="452.0" />
       <CheckBox fx:id="checkbox" layoutX="507.0" layoutY="455.0" mnemonicParsing="false" text="On Sale" />
-      <Button layoutX="754.0" layoutY="372.0" mnemonicParsing="false" onAction="#btndelete" prefHeight="26.0" prefWidth="94.0" styleClass="pink" stylesheets="@application.css" text="DELETE" />
-      <Button layoutX="754.0" layoutY="416.0" mnemonicParsing="false" onAction="#btnedit" prefHeight="26.0" prefWidth="94.0" styleClass="blue" stylesheets="@application.css" text="EDIT" />
+      <Button layoutX="754.0" layoutY="372.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="94.0" styleClass="pink" stylesheets="@application.css" text="DELETE" />
+      <Button layoutX="754.0" layoutY="416.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="94.0" styleClass="blue" stylesheets="@application.css" text="EDIT" />
       <Button layoutX="754.0" layoutY="450.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="94.0" styleClass="blue" stylesheets="@application.css" text="UPDATE" />
       <ComboBox layoutX="507.0" layoutY="371.0" prefHeight="26.0" prefWidth="210.0" promptText="Apple" styleClass="blue" stylesheets="@application.css" />
       <ComboBox layoutX="507.0" layoutY="408.0" prefHeight="26.0" prefWidth="210.0" promptText="Smartphones" styleClass="blue" stylesheets="@application.css" />
