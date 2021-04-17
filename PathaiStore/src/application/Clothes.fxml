@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="500.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.HomeController">
+<AnchorPane prefHeight="500.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ClothesController">
    <children>
       <Pane prefHeight="70.0" prefWidth="900.0" styleClass="green" stylesheets="@application.css">
          <children>
@@ -20,22 +23,33 @@
                   <Font name="System Bold" size="24.0" />
                </font>
             </Label>
-            <Button layoutX="677.0" layoutY="26.0" mnemonicParsing="false" onAction="#ChangingToHome" prefHeight="25.0" prefWidth="71.0" styleClass="blue" stylesheets="@application.css" text="Home" />
-            <Button layoutX="756.0" layoutY="26.0" mnemonicParsing="false" onAction="#ChangingToCart" prefHeight="25.0" prefWidth="71.0" styleClass="pink" stylesheets="@application.css" text="Cart" />
+            <Button layoutX="677.0" layoutY="26.0" mnemonicParsing="false" onAction="#callHome" prefHeight="25.0" prefWidth="71.0" styleClass="blue" stylesheets="@application.css" text="Home" />
+            <Button layoutX="756.0" layoutY="26.0" mnemonicParsing="false" onAction="#callCart" prefHeight="25.0" prefWidth="71.0" styleClass="pink" stylesheets="@application.css" text="Cart" />
          </children>
       </Pane>
-      <Label layoutX="44.0" layoutY="87.0" prefHeight="35.0" prefWidth="107.0" style="-fx-text-fill: #399CFF;" text="CATAGORY" underline="true">
+      <Label layoutX="44.0" layoutY="87.0" prefHeight="35.0" prefWidth="107.0" style="-fx-text-fill: #FF395F;" text="CATAGORY" underline="true">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
       </Label>
-      <Button layoutX="44.0" layoutY="135.0" mnemonicParsing="false" onAction="#ChangingToFood" prefHeight="35.0" prefWidth="86.0" styleClass="pink" stylesheets="@application.css" text="Food" />
-      <Button layoutX="44.0" layoutY="239.0" mnemonicParsing="false" onAction="#ChangingToClothes" prefHeight="35.0" prefWidth="86.0" styleClass="reversepink" stylesheets="@application.css" text="Clothes" />
-      <Button layoutX="44.0" layoutY="187.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="86.0" styleClass="pink" stylesheets="@application.css" text="Electronic" />
-      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="396.0" layoutY="87.0" prefHeight="20.0" prefWidth="128.0" text="Electronics Items">
+      <Button layoutX="44.0" layoutY="135.0" mnemonicParsing="false" onAction="#callFood" prefHeight="35.0" prefWidth="86.0" styleClass="pink" stylesheets="@application.css" text="Food" />
+      <Button layoutX="44.0" layoutY="239.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="86.0" styleClass="reversepink" stylesheets="@application.css" text="Clothes" />
+      <Button layoutX="44.0" layoutY="187.0" mnemonicParsing="false" onAction="#callElectronics" prefHeight="35.0" prefWidth="86.0" styleClass="pink" stylesheets="@application.css" text="Electronic" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="214.0" layoutY="105.0" prefHeight="20.0" prefWidth="128.0" text="Clothes Items">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
       </Label>
+      <Button layoutX="466.0" layoutY="428.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="107.0" styleClass="blue" stylesheets="@application.css" text="ADD TO CART" />
+      <ListView fx:id="listview" layoutX="214.0" layoutY="135.0" prefHeight="264.0" prefWidth="610.0" />
+      <Label layoutX="44.0" layoutY="288.0" prefHeight="18.0" prefWidth="107.0" style="-fx-text-fill: #399CFF;" text="FILTER" underline="true">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <ComboBox layoutX="43.0" layoutY="356.0" prefHeight="26.0" prefWidth="107.0" promptText="XL" styleClass="blue" stylesheets="@application.css" />
+      <ComboBox layoutX="43.0" layoutY="399.0" prefHeight="26.0" prefWidth="107.0" promptText="WOMEN" styleClass="blue" stylesheets="@application.css" />
+      <CheckBox layoutX="44.0" layoutY="322.0" mnemonicParsing="false" text="Sale" />
+      <Button layoutX="754.0" layoutY="103.0" mnemonicParsing="false" onAction="#showclothes" prefHeight="26.0" prefWidth="71.0" styleClass="blue" stylesheets="@application.css" text="SHOW" />
    </children>
 </AnchorPane>
